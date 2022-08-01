@@ -16,7 +16,7 @@ public class emailvalidation {
 		if (email == null || email.isEmpty()) {
 			return "invalid";
 		}
-		String emailRegex = "^(.+)@(.+)$";
+		String emailRegex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
 		Pattern pattern = Pattern.compile(emailRegex);
 		
 		if (pattern.matcher(email).matches()){
